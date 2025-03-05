@@ -132,6 +132,7 @@ int main()
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
 		printf("\t3 - Deletar nomes\n");
+		printf("\t4 - sair do sistema \n");
 		printf("opção:");
 	
 		scanf("%d",&opcao); //Armmazenando a escolha do usuario
@@ -150,7 +151,13 @@ int main()
 			
 			case 3:
 			deletar();// chamando a função deletar 
+			break; 
+			
+			case 4:
+			printf("obrigado por usar o sistema\n ");
+			return 0;
 			break;
+			
 			
 			default://
 			printf("Essa opcao não esta disponivel \n");// caso o usuario digite uma opção não valida aparece essa mensagem 
